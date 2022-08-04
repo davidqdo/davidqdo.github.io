@@ -259,6 +259,15 @@ img {
   row-gap: 1rem;
 }
 
+.home__social-icon{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.home__social-icon:hover{
+  color: var(--first-color-alt);
+}
+
 /*==================== BUTTONS ====================*/
 
 
