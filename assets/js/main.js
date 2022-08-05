@@ -33,7 +33,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
-function toggleSkills(){
+function toggleSkillsON(){
     let itemClass = this.parentNode.className
 
     /*
@@ -46,8 +46,25 @@ function toggleSkills(){
     }
 }
 
+function toggleSkillsOFF() {
+    let itemClass = this.parentNode.className
+
+    if(itemClass === 'skills__content skills__open'){
+        this.parentNode.className = 'skills__content skills__close'
+    }
+}
+
+// skillsHeader.forEach((el) =>{
+//     el.addEventListener('click', toggleSkillsON)
+// })
+
 skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
+    if(this.parentNode.className === 'skills__content skills__close'){
+        el.addEventListener('click', toggleSkillsON)
+    } 
+    else if(this.parentNode.className === 'skills__content skills__open'){
+        el.addEventListener('click', toggleSkillsOFF)
+    }
 })
 
 /*==================== QUALIFICATION TABS ====================*/
