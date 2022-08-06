@@ -51,7 +51,18 @@ skillsHeader.forEach((el) =>{
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+let swiper = new Swiper('.project__container', {
+    cssMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+});
 
 /*==================== TESTIMONIAL ====================*/
 
