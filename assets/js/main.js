@@ -64,9 +64,6 @@ let swiper = new Swiper('.project__container', {
     },
 });
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
