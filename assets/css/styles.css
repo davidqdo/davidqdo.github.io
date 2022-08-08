@@ -175,7 +175,8 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 05)), url(../img/shadowCity.jpg);
 }
 
 /*==================== NAV ====================*/
