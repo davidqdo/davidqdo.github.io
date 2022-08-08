@@ -128,4 +128,9 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
-}) 
+})
+
+/*==================== DISPLAY CURRENT TIME ====================*/
+let datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
