@@ -771,9 +771,12 @@ img {
   .nav__menu{
     margin-left: auto;
   }
-  .change-theme,
-  .cur__time{
+  .change-theme{
     margin: 0;
+  }
+
+  .cur__time{
+    margin-left: var(--mb-1)
   }
 
   .home__container{
