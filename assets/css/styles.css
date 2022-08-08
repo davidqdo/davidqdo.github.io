@@ -206,6 +206,13 @@ img {
   color: var(--first-color);
 }
 
+.cur__time{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: 1.1rem;
+  margin-left: var(--mb-1);
+}
+
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
