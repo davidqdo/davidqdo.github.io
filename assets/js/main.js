@@ -133,9 +133,7 @@ themeButton.addEventListener('click', () => {
 
 /*==================== DISPLAY CURRENT TIME ====================*/
 function refreshTime() {
-    const timeDisplay = document.getElementById("time");
-    const dateString = new Date().toLocaleString();
-    const formattedString = dateString.replace(", ", " - ");
-    timeDisplay.textContent = formattedString;
+    let datetime = new Date().toLocaleTimeString();
+    document.getElementById("time").textContent = datetime;
   }
 setInterval(refreshTime, 1000);
